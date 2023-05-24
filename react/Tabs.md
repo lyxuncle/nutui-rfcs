@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -39,11 +39,11 @@ Tabs:
 | titleGutter | 标签间隙 | number | string |  | 改成 css 变量 |
 | titleNode | 自定义导航区域 | reactnode | - | 改成 title，类型 () => reactnode |
 | size | 标签栏字体尺寸大小 可选值 `large`、`normal`、`small` | string | normal | 删掉，改成 css 变量，把 large、normal、 small class删掉 |
-| leftAlign | 标题左对齐 | boolean |  | align ？？ |
+| leftAlign | 标题左对齐 | boolean |  | align = 'left"| 'right' |
 | autoHeight | 自动高度。设置为 true 时，nut-tabs 和 nut-tabs__content 会随着当前 nut-tabpane 的高度而发生变化。 | boolean |  |  |
 | tabStyle | 标签栏样式 | cssproperties | {} |  |
-| onClick | 点击标签时触发 | `{title, panekey, disabled}` |  |  |
-| onChange | 当前激活的标签改变时触发 | `{title, panekey, disabled}` |  |  |
+| onClick | 点击标签时触发 | `{title, panekey, disabled}` |  | (index: string | number) => void |
+| onChange | 当前激活的标签改变时触发 | `{title, panekey, disabled}` |  | (index: string | number) => void |
 
 Tabs:
     
@@ -56,7 +56,7 @@ Tabs Children:
 | 属性 | 描述 | 类型 | 默认值 | 改动点 |
 | --- | --- | --- | --- | --- |
 | title | 标题 | string | - | 是否需要修改 tab 的实现和组件划分？？ todo |
-| paneKey | 标签 Key , 匹配的标识符 | string | 默认索引0,1,2... | value，用于控制选中?? |
+| paneKey | 标签 Key , 匹配的标识符 | string | 默认索引0,1,2... | value，用于控制选中 |
 | disabled | 是否禁用标签 | boolean |  |  |
 
 

@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -32,7 +32,7 @@ Popup:
 | zIndex | 遮罩层级 | string | number | 2000 |  |
 | duration | 遮罩动画时长，单位秒 | number | 0.3 |  |
 | overlayClass | 自定义遮罩类名 | string | - | 改成 overlayClassName，统一处理 |
-| overlayStyle | 自定义遮罩样式 | cssproperties | - | 改成 overlayStyle，统一处理 |
+| overlayStyle | 自定义遮罩样式 | cssproperties | - |  |
 | lockScroll | 背景是否锁定 | boolean | true |  |
 | overlay | 是否显示遮罩 | boolean | true |  |
 | closeOnClickOverlay | 是否点击遮罩关闭 | boolean | true | 改为：closeOnOverlayClick |
@@ -43,12 +43,12 @@ Popup:
 | closeable | 是否显示关闭按钮 | boolean |  |  |
 | closeIconPosition | 关闭按钮位置（top-left,top-right,bottom-left,bottom-right） | string | top-right |  |
 | closeIcon | 自定义 Icon | string | close |  |
-| destroyOnClose | 组件销毁后是否关闭 | boolean | true | 改为：不可见时卸载内容 |
-| round | 是否显示圆角 | boolean |  | 改为 radius |
+| destroyOnClose | 组件销毁后是否关闭 | boolean | true | 改为：组件不可见时，卸载内容。默认为不卸载。 |
+| round | 是否显示圆角 | boolean |  | 改为 radius， 保持现状，可使用css变量修改具体值。 |
 | teleport | 指定节点挂载 | htmlelement | (() => htmlelement) | null | null | 改成 portal，与react保持一致 |
 | onClick | 点击弹框时触发 | `event: mouseevent` |  |  |
-| onClickCloseIcon | 点击关闭图标时触发 | `event: mouseevent` |  | 修改 调用 onClickCloseIcon 的方法  返回值 改为 boolean  () => boolean     |
-| onOpen | 打开弹框时触发 | - |  | 删 |
+| onClickCloseIcon | 点击关闭图标时触发 | `event: mouseevent` |  | 修改 调用 onClickCloseIcon 的方法，因为点击overlay时，可能会有阻塞行为  返回值 改为 boolean  () => boolean     |
+| onOpen | 打开弹框时触发 | - |  | 删，保持现状，当visible时，可使用该回调。 |
 | onClose | 关闭弹框时触发 | - |  |  |
 | onOpend | 遮罩打开动画结束时触发 | `event: htmlelement` |  | afterClose 完全关闭后触发 () => void -  afterShow 完全展示后触发 () => void - |
 | onClosed | 遮罩关闭动画结束时触发 | `event: htmlelement` |  |  |

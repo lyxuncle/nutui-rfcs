@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -30,18 +30,18 @@ Audio:
 | --- | --- | --- | --- | --- |
 | className | 类名 | string | - |  |
 | style | css样式 | cssproperties | {} |  |
-| url | 语音资源链接 | string | - |  |
-| muted | 是否静音 | boolean |  | 改为mute |
+| url | 语音资源链接 | string | - | 改成src |
+| muted | 是否静音 | boolean |  |  |
 | autoplay | 是否自动播放 | boolean |  |  |
 | loop | 是否循环播放 | boolean |  |  |
 | preload | 是否预加载语音 枚举值：'none'、'metadata'、'auto'、'' | string | auto |  |
 | type | 展示形式，可选值：controls 控制面板 progress 进度条 icon 图标 none 自定义 | string | progress |  |
-| onFastBack | 语音快退回调,type=progress时生效 | `event：htmlaudioelement` |  | 改为onFastReverse onRewind？ |
-| onForward | 语音快进回调,type=progress时生效 | `event：htmlaudioelement` |  | 改为onFastForward？ |
+| onFastBack | 语音快退回调,type=progress时生效 | `event：htmlaudioelement` |  | 改为onBack |
+| onForward | 语音快进回调,type=progress时生效 | `event：htmlaudioelement` |  |  |
 | onPause | 暂停回调 | `event：htmlaudioelement` |  |  |
-| onPlayEnd | 语音播放完成，loop=false时生效 | `event：htmlaudioelement` |  | ？ |
+| onPlayEnd | 语音播放完成，loop=false时生效 | `event：htmlaudioelement` |  | onEnd |
 | onMute | 静音回调 | `event：htmlaudioelement` |  |  |
-| onCanPlay | 可以播放媒体时触发 | `event：htmlaudioelement` |  | ？ |
+| onCanPlay | 可以播放媒体时触发 | `event：htmlaudioelement` |  |  |
 
 
 # 缺点

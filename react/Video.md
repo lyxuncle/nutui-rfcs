@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -28,7 +28,8 @@ Video:
 
 | 属性 | 描述 | 类型 | 默认值 | 改动点 |
 | --- | --- | --- | --- | --- |
-| options | 控制视频播放属性 | object | - |  |
+| source | 视频地址和类型设置 | object | - |  |
+| options | 控制视频播放属性 | object | - | 备注：全局修改点 check |
 | options.autoplay | 是否自动播放 | boolean |  |  |
 | options.poster | 海报设置 | string | - |  |
 | options.loop | 是否循环播放 | boolean |  |  |
@@ -38,7 +39,6 @@ Video:
 | onPlayFuc | 播放 | - |  |  |
 | onPauseFuc | 暂停 | - |  |  |
 | onPlayend | 播放完成回调 | - |  | 改为 onPlayEnd |
-| sourceData | 获取数据 | array | - |  |
 
 
 # 缺点

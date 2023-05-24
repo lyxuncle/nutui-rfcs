@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -28,16 +28,16 @@ Tag:
 
 | 属性 | 描述 | 类型 | 默认值 | 改动点 |
 | --- | --- | --- | --- | --- |
-| color | 标签颜色 | string | - |  |
-| texColor | 文本颜色，优先级高于color属性 | string | white |  |
+| type | 标签类型，可选值为primary success danger warning | string | default | 类型改一下 |
+| color | 标签颜色 | string | - | 改为 background |
+| texColor | 文本颜色，优先级高于color属性 | string | white | 改为 color |
 | plain | 是否为空心样式 | boolean |  |  |
 | round | 是否为圆角样式 | boolean |  |  |
 | mark | 是否为标记样式 | boolean |  |  |
 | closeable | 是否为可关闭标签 | boolean |  |  |
-| iconSize | 关闭标签的尺寸 | string | number | 12px |  |
-| onClick | 点击事件 | `event` |  |  |
+| iconSize | 关闭标签的尺寸 | string | number | 12px | 删除 |
+| onClick | 点击事件 | `event` |  | 备注：处理冒泡 |
 | onClose | 关闭事件 | `event` |  |  |
-| rate | 数值，大于0时箭头向上，小于0时箭头向下 | number | - |  |
 
 
 # 缺点

@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -24,19 +24,19 @@
 # 详细设计
 
 
-List（virtuallist）:
+List:
 
 | 属性 | 描述 | 类型 | 默认值 | 改动点 |
 | --- | --- | --- | --- | --- |
-| containerSize | 容器高度 | number | 获取元素的 offsetWidth 或 offsetHeight，需要 css 给出 |  |
+| sourceData | 获取数据 | array | - | 改 list |
+| containerSize | 容器高度 | number | 获取元素的 offsetWidth 或 offsetHeight，需要 css 给出 | 改成 containerHeight |
 | ItemRender | virtual 列表父节点渲染的函数 | react.fc | - |  |
-| itemSize | item高度，如果不定高，则为首屏单个最大size | string | - |  |
-| itemEqualSize | item大小是否一致 | boolean | true |  |
-| overscan | 除了视窗里面默认的元素, 还需要额外渲染的item个数 | number | 2 |  |
+| itemSize | item高度，如果不定高，则为首屏单个最大size | string | - | 改成 itemHeight |
+| itemEqualSize | item大小是否一致 | boolean | true | itemEqual |
+| overscan | 除了视窗里面默认的元素, 还需要额外渲染的item个数 | number | 2 | ？ |
 | key | 唯一值 ,Item(sourceData)具体的某个唯一值的字段 | string | index |  |
-| horizontal | 决定列表是横向的还是纵向的 | boolean |  |  |
+| horizontal | 决定列表是横向的还是纵向的 | boolean |  | direction |
 | onScroll | 滑动到底(右)的事件，可以实现无限滚动 | - |  |  |
-| width | 水印的宽度 | number | 120 |  |
 
 
 # 缺点

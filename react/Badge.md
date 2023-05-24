@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -28,14 +28,14 @@ Badge:
 
 | 属性 | 描述 | 类型 | 默认值 | 改动点 |
 | --- | --- | --- | --- | --- |
-| value | 显示的内容 | string | - | 是不是和icon可以合并，改为content，类型改为ReactNode |
-| max | value 为数值时，最大值 | number | 10000 | 自定义？ |
-| zIndex | 徽标的 z-index 值 | number | 10 |  |
+| value | 显示的内容 | string | - | icon和value合并，类型改成ReactNode |
+| max | value 为数值时，最大值 | number | 10000 | 默认值改为99，接近常用用户场景 |
+| zIndex | 徽标的 z-index 值 | number | 10 | 删除 |
 | dot | 是否为小点 | boolean |  |  |
-| top | 上下偏移量，支持单位设置，可设置为：5 等 | number |  | 删或是css变量？ |
-| right | 左右偏移量，支持单位设置，可设置为：5 等 | number |  | 删或是css变量？ |
-| color | 徽标背景颜色 | string | #fa2c19 | css变量实现 |
-| icon | 徽标自定义 | string | - | 删 |
+| top | 上下偏移量，支持单位设置，可设置为：5 等 | number |  |  |
+| right | 左右偏移量，支持单位设置，可设置为：5 等 | number |  |  |
+| color | 徽标背景颜色 | string |  | 删，与antd保持一致，不删除。 |
+| icon | 徽标自定义 | string | - | icon和value合并，类型改成ReactNode |
 
 
 # 缺点

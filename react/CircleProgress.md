@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -28,12 +28,12 @@ CircleProgress:
 
 | 属性 | 描述 | 类型 | 默认值 | 改动点 |
 | --- | --- | --- | --- | --- |
-| progress | 百分比 | number | string | 必传项，无默认值 |  |
+| progress | 百分比 | number | string | 必传项，无默认值 | 改为 percent，另不建议直接作为children展示。默认展示内容为空。 |
 | strokeWidth | 圆弧的宽度 | number | string | 5 |  |
-| radius | 半径 | number | string | 50 |  |
-| circleColor | 圆环进度条颜色 | number | string | #fa2c19 |  |
-| pathColor | 圆环轨道颜色 | string | #d9d9d9 |  |
-| strokeLinecap | 圆环进度条端点形状可选值为 square butt | string | round |  |
+| radius | 半径 | number | string | 50 | 改为 size |
+| circleColor | 圆环进度条颜色 | number | string | #fa2c19 | 改为 color |
+| pathColor | 圆环轨道颜色 | string | #d9d9d9 | 改为 background |
+| strokeLinecap | 圆环进度条端点形状可选值为 square butt | string | round | 可废弃，作为变量加入  不能用css变量，因为是path标签的属性 |
 | clockwise | 是否顺时针展示 | boolean | true |  |
 
 

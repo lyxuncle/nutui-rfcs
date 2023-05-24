@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -31,8 +31,8 @@ Notify:
 | type | 提示的信息类型（primary，success ，danger，warning） | string | danger |  |
 | message/msg | 展示文案，支持通过\n换行 | string | - | 组件使用：children  函数调用：作为第一个参数，不需要名字 |
 | duration | 展示时长(ms)，值为 0 时，notify 不会消失 | string | 3000 |  |
-| color | 字体颜色 | string | - | 删，样式控制 |
-| background | 背景颜色 | string | - | 删，样式控制 |
+| color | 字体颜色 | string | - | 删，用css 变量 |
+| background | 背景颜色 | string | - | 删，用css 变量 |
 | className | 自定义类名 | string | number | 1 |  |
 | position | 自定义位置 (top, bottom) | string | top |  |
 | onClick | 点击事件回调 | 无 |  |  |

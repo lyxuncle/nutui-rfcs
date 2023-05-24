@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -24,11 +24,11 @@
 # 详细设计
 
 
-Cell(Card):
+Cell:
 
 | 属性 | 描述 | 类型 | 默认值 | 改动点 |
 | --- | --- | --- | --- | --- |
-| title | 分组标题 | string | - | 保留，改为 string | React.Node 类型 |
+| title | 分组标题 | string | - | 保留，改为 React.Node 类型 |
 | desc | 分组描述 | string | - | 7. desc 改为 description |
 | titleSlot | 自定义`title`标题区域 | reactnode | - | 8. title 和 description 改为 React.Node 类型，去掉 titleSlot 和 descSlot |
 | descSlot | 自定义`desc`描述区域 | reactnode | - | 删 |

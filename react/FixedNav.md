@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -39,7 +39,7 @@ FixedNav:
 | slotList | 自定义展开列表内容 | htmlelement | - | 改为 children |
 | slotBtn | 自定义按钮 | htmlelement | - | 改为 content |
 | onChange | 展开收起按钮回调 | `value: boolean` |  |  |
-| onSelected | 选择之后触发 | `item, event: mouseevent` |  |  |
+| onSelected | 选择之后触发 | `item, event: mouseevent` |  | 改为 onSelect |
 
 
 # 缺点

@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -24,7 +24,7 @@
 # 详细设计
 
 
-Uploader（ImageUploader）:
+Uploader:
 
 | 属性 | 描述 | 类型 | 默认值 | 改动点 |
 | --- | --- | --- | --- | --- |
@@ -33,14 +33,14 @@ Uploader（ImageUploader）:
 | url | 上传服务器的接口地址 | string | - |  |
 | defaultFileList | 默认已经上传的文件列表 | fileitem[] | [] | 改为 defaultValue |
 | isPreview | 是否上传成功后展示预览图 | boolean | true | 改为 preview |
-| defaultImg | 当上传非图片('image')格式的默认图片地址 | string | - | ?缩略图 thumbnailUrl |
+| defaultImg | 当上传非图片('image')格式的默认图片地址 | string | - | 改为previewUrl |
 | isDeletable | 是否展示删除按钮 | boolean | true | 改为 deletable |
 | method | 上传请求的 http method | string | post |  |
 | listType | 上传列表的内建样式，支持两种基本样式 picture、list | string | picture | previewType |
 | capture | 图片[选取模式](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/input#htmlattrdefcapture)，直接调起摄像头 | string |  |  |
 | maximize | 可以设定最大上传文件的大小（字节） | number | string | Number.MAX_VALUE | maxFileSize |
 | maximum | 文件上传数量限制 | number | string | 1 | maxCount |
-| clearInput | 是否需要清空`input`内容，设为`true`支持重复选择上传同一个文件 | boolean | true | ?换名 |
+| clearInput | 是否需要清空`input`内容，设为`true`支持重复选择上传同一个文件 | boolean | true |  |
 | accept | 允许上传的文件类型，[详细说明](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/Input/file#%E9%99%90%E5%88%B6%E5%85%81%E8%AE%B8%E7%9A%84%E6%96%87%E4%BB%B6%E7%B1%BB%E5%9E%8B) | string | * |  |
 | headers | 设置上传的请求头部 | object | {} | 改成 header |
 | data | 附加上传的信息 formData | object | {} |  |
@@ -61,7 +61,7 @@ Uploader:
 | 属性 | 描述 | 类型 | 默认值 | 改动点 |
 | --- | --- | --- | --- | --- |
 | status | 文件状态值，可选'ready,uploading,success,error,removed' | `ready` |  |  |
-| uid | 文件的唯一标识 | `new date().gettime().tostring()` |  | ?id |
+| uid | 文件的唯一标识 | `new date().gettime().tostring()` |  |  |
 | name | 文件名称 | - |  |  |
 | url | 文件路径 | - |  |  |
 | type | 文件类型 | `image/jpeg` |  |  |

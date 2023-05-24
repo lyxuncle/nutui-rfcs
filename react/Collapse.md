@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -28,11 +28,11 @@ Collapse:
 
 | 属性 | 描述 | 类型 | 默认值 | 改动点 |
 | --- | --- | --- | --- | --- |
-| activeName | 当前展开面板的 name | 手风琴模式：string | number 非手风琴模式：(string | number)[] | - |  |
+| activeName | 当前展开面板的 name | 手风琴模式：string | number 非手风琴模式：(string | number)[] | - | 改 activeKey  与 item 上的 name 保持一致，activeName 未修改 @裴新宇  |
 | accordion | 是否开启手风琴模式 | boolean |  |  |
-| icon | 图标链接/或使用 NutUI 的 icon | string | - |  |
-| iconSize | 图标大小 | string | 16px |  |
-| iconColor | 图标颜色 | string | - |  |
+| icon | 图标链接/或使用 NutUI 的 icon | string | - | 改为 expandIcon，类型改为 ReactNode  已完成状态 |
+| iconSize | 图标大小 | string | 16px | 删 |
+| iconColor | 图标颜色 | string | - | 删 |
 | rotate | 点击折叠和展开的旋转角度,在自定义图标模式下生效 | string | number | 180 |  |
 | onChange | 切换面板时触发 | isopen:是否打开状态；name：当前点击的name值 |  |  |
 
@@ -40,14 +40,16 @@ Collapse:
     
 | 属性 | 描述 | 类型 | 默认值 | 改动点 |
 | --- | --- | --- | --- | --- |
-| name | 唯一标识符，必填 | string | number | - |  |
+| name | 唯一标识符，必填 | string | number | - | 改为 key？？？待办  key 不合法，未修改 @裴新宇  |
 | title | 标题栏左侧内容 | string | - |  |
 | disabled | 标题栏是否禁用 | boolean |  |  |
-| subTitle | 标题栏副标题 | string | - |  |
-| titleIcon | 标题图标链接/或使用 NutUI 的 icon | string | - |  |
-| titleIconColor | 标题图标颜色 | string | - |  |
-| titleIconSize | 标题图标大小 | string | - |  |
-| titleIconPosition | 标题图标位置 | string | - |  |
+| isOpen | 是否展开 | boolean |  | 改为 opened   变更为函数类型，名称为 isOpen @裴新宇  |
+| childnull |  |  |  | 改为 children ？？  已删除 @裴新宇  |
+| subTitle | 标题栏副标题 | string | - | 改为 extra |
+| titleIcon | 标题图标链接/或使用 NutUI 的 icon | string | - | 改为 expandIcon |
+| titleIconColor | 标题图标颜色 | string | - | 删 |
+| titleIconSize | 标题图标大小 | string | - | 删 |
+| titleIconPosition | 标题图标位置 | string | - | 删 |
 
 
 # 缺点

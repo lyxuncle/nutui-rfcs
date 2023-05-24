@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -28,30 +28,30 @@ Avatar:
 
 | 属性 | 描述 | 类型 | 默认值 | 改动点 |
 | --- | --- | --- | --- | --- |
-| size | 设置头像的大小，可选值为：large、normal、small，支持直接输入数字 | string | normal | css变量实现? avatarGroup也有 |
-| shape | 设置头像的形状，可选值为：square、round | string | round | css变量实现? |
-| bgColor | 设置 Icon、字符类型头像的背景色 | string | #eee | 删，Icon自定义 |
-| color | 设置 Icon、字符类型头像的颜色 | string | #666 | 删，Icon自定义 |
-| url | 设置图片类型头像的地址 | string | - |  |
+| size | 设置头像的大小，可选值为：large、normal、small，支持直接输入数字 | string | normal |  |
+| shape | 设置头像的形状，可选值为：square、round | string | round |  |
+| bgColor | 设置 Icon、字符类型头像的背景色 | string | #eee |  |
+| color | 设置 Icon、字符类型头像的颜色 | string | #666 |  |
+| url | 设置图片类型头像的地址 | string | - | 改成src |
 | alt | 设置图片类型头像无法显示时的替代文本 | string | - |  |
 | icon | 设置 Icon 类型头像图标, 类似 Icon 组件的 name 属性 | string | - | 改为ReactNode类型 |
 | iconSize | [图标尺寸](#/icon) | string | number | 16 | 删，Icon自定义 |
-| onActiveAvatar | 点击头像触发事件 | function | event | 改为onClick？ |
+| onActiveAvatar | 点击头像触发事件 | function | event | 改为onClick |
 | onError | 图片加载失败的事件 | function | event |  |
 
 Avatar:
     
 | 属性 | 描述 | 类型 | 默认值 | 改动点 |
 | --- | --- | --- | --- | --- |
-| maxCount | 显示的最大头像个数 | number | string | - |  |
-| maxContent | 头像数量超出时，会出现一个头像折叠元素。该元素内容可为...、more、+N。默认为 +N |  |  | ? |
-| size | 设置头像的大小，可选值为：large、normal、small，支持直接输入数字 | string | +N | css变量实现? |
-| shape | 设置头像的形状，可选值为：square、round | string | round | css变量实现? |
-| maxBgColor | 设置 Icon、字符类型头像的背景色 | string | #eee | 删，Icon自定义 |
-| maxColor | 设置 Icon、字符类型头像的颜色 | string | #666 | 删，Icon自定义 |
-| span | 设置头像之间的间距 | string | -8 | css变量实现? 改为space？ |
-| zIndex | 头像之间的层级关系，可选值为：left、right | string | left |  |
-|  |  |  |  | 需要加fit吗？ |
+| maxCount | 显示的最大头像个数 | number | string | - | 改成max |
+| maxContent | 头像数量超出时，会出现一个头像折叠元素。该元素内容可为...、more、+N。默认为 +N | string |  |  |
+| size | 设置头像的大小，可选值为：large、normal、small，支持直接输入数字 | string | +N |  |
+| shape | 设置头像的形状，可选值为：square、round | string | round |  |
+| maxBgColor | 设置 Icon、字符类型头像的背景色 | string | #eee |  |
+| maxColor | 设置 Icon、字符类型头像的颜色 | string | #666 |  |
+| span | 设置头像之间的间距 | string | -8 | 改为gap |
+| zIndex | 头像之间的层级关系，可选值为：left、right | string | left | 改成level |
+|  |  |  |  | 加fit  图片加兜底小人 |
 
 
 # 缺点

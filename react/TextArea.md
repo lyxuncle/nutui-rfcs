@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -32,7 +32,7 @@ TextArea:
 | placeholder | 设置占位提示文字 | string | 请输入内容 |  |
 | maxlength | 限制最长输入字符 | string | number | - | maxLength |
 | rows | textarea 的高度 | string | number | 2 | 可以理解为行数 |
-| limitshow | textarea 是否展示输入字符。须配合`max-length`使用 | boolean |  | ?showCount? |
+| limitshow | textarea 是否展示输入字符。须配合`max-length`使用 | boolean |  | showCount |
 | autosize | 高度是否可拉伸 | boolean |  | autoSize |
 | textAlign | 文本位置,可选值`left`,`center`,`right` | string | left | css变量控制 |
 | readonly | 只读属性 | boolean |  | 原生属性textarea：理论上都支持用户传入   autoComplete autoFocus disabled readOnly onFocus   onBlur onCompositionStart onCompositionEnd onClick |

@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -28,13 +28,14 @@ TimeSelect:
 
 | 属性 | 描述 | 类型 | 默认值 | 改动点 |
 | --- | --- | --- | --- | --- |
+| onTimeChange | 点击时间回调，内部通过 setCurrentKey、setCurrentTime 更新数据 | 否 | time: string, list: [] |  |
 | date | 显示的名称 | string | - |  |
-| pannel-key | 唯一标识，和 currentKey 一起标识当前选择的天 | number | string |  | 改为 paneKey |
 
 dates:
     
 | 属性 | 描述 | 类型 | 默认值 | 改动点 |
 | --- | --- | --- | --- | --- |
+| pannel-key | 唯一标识，和 currentKey 一起标识当前选择的天 | number | string |  | 改为 key |
 | key | 唯一标识，和 pannel-key、currentKey 一起标识当前选择的天 | array | [] |  |
 | list | 可选时间列表 | array | [] |  |
 

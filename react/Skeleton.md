@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -28,15 +28,15 @@ Skeleton:
 
 | 属性 | 描述 | 类型 | 默认值 | 改动点 |
 | --- | --- | --- | --- | --- |
-| loading | 是否显示骨架屏(true不显示骨架屏，false显示骨架屏) | boolean | true |  |
-| width | 每行宽度(px单位) | string | 100px |  |
-| height | 每行高度(px单位) | string | 100px |  |
+| loading | 是否显示骨架屏(true不显示骨架屏，false显示骨架屏) | boolean | true | 改为 visible，备注：提取一下 css 变量 |
+| width | 每行宽度(px单位) | string | 100px | 改成 css 变量 |
+| height | 每行高度(px单位) | string | 100px | 改成 css 变量 |
 | animated | 是否开启骨架屏动画 | boolean |  |  |
 | avatar | 是否显示头像 | boolean |  |  |
 | avatarShape | 头像形状：正方形/圆形 | string | round |  |
 | avatarSize | 头像大小 | string | 50px |  |
-| round | 标题/段落是否采用圆角风格 | boolean |  |  |
-| row | 设置段落行数 | string | 1 |  |
+| round | 标题/段落是否采用圆角风格 | boolean |  | 删除，标题和段落的圆角设置通过 css 变量控制 |
+| row | 设置段落行数 | string | 1 | 改成 rows |
 | title | 是否显示段落标题 | boolean | true |  |
 
 

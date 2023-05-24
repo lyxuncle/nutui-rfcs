@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -35,7 +35,7 @@ Ellipsis:
 | collapseText | 收起操作的文案 | string | - |  |
 | symbol | 省略的符号 | string | ... |  |
 | lineHeight | 容器的行高 | string | number | 20 |  |
-| onClick | 文本点击是触发 | -- |  |  |
+| onClick | 文本点击是触发 | -- |  | 阻止冒泡事件，已完成；其他组件需关注。 |
 | onChange | 点击展开收起时触发 | -- |  |  |
 
 

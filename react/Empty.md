@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -28,9 +28,9 @@ Empty:
 
 | 属性 | 描述 | 类型 | 默认值 | 改动点 |
 | --- | --- | --- | --- | --- |
-| image | 图片类型，可选值为 `error` `network` `empty`，支持传入图片 URL | string | reactnode | empty |  |
+| image | 图片类型，可选值为 `error` `network` `empty`，支持传入图片 URL | string | reactnode | empty | 可增加其他状态，如Error等 |
 | imageSize | 图片大小，number 类型单位为 px | number | string | - |  |
-| description | 图片下方的描述文字 | reactnode | 无数据 |  |
+| description | 图片下方的描述文字 | reactnode | 无数据 | 组件名改为：Result；  增加属性：status，可选值为 现有image的可选值。 |
 
 
 # 缺点

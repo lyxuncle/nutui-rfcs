@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -28,10 +28,10 @@ AnimatingNumbers:
 
 | 属性 | 描述 | 类型 | 默认值 | 改动点 |
 | --- | --- | --- | --- | --- |
-| maxLen | 设置最大展示长度，长度不够按位补 0 | number |  | 改为maxLength |
-| endNumer | 结束值,必填项 | string | - |  |
-| delaySpeed | 等待动画执行时间，单位 ms | number | 300 |  |
-| easeSpeed | 动画执行时间，单位 s | number | 1 |  |
+| maxLen | 设置最大展示长度，长度不够按位补 0 | number |  | 改成length，描述修改，0的位置 |
+| endNumer | 结束值,必填项 | string | - | 改为 value，类型修改string|number |
+| delaySpeed | 等待动画执行时间，单位 ms | number | 300 | 改成delay，单位统一 |
+| easeSpeed | 动画执行时间，单位 s | number | 1 | 改成duration，单位统一 |
 | thousands | 是否有千位分隔符 | boolean |  |  |
 | className |  |  |  |  |
 | style |  |  |  | 代码补一下 |

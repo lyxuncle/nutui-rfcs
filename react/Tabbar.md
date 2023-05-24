@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -29,7 +29,7 @@ Tabbar:
 | 属性 | 描述 | 类型 | 默认值 | 改动点 |
 | --- | --- | --- | --- | --- |
 | visible | 默认选中的标签的索引值 | number |  | 改为 defaultValue |
-| activeVisible | 选中的标签的索引值 | number | - | 改为 activeValue |
+| activeVisible | 选中的标签的索引值 | number | - | 改为 value |
 | bottom | 是否固定在页面底部 | boolean |  | 改为 fixed？ |
 | unactiveColor | icon未激活的颜色 | string | #7d7e80 | 改为 inactiveColor |
 | activeColor | icon激活的颜色 | string | #1989fa |  |

@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -28,13 +28,13 @@ Barrage:
 
 | 属性 | 描述 | 类型 | 默认值 | 改动点 |
 | --- | --- | --- | --- | --- |
-| frequency | 可视区域内每个弹幕出现的时间间隔 | number |  |  |
-| speeds | 每个弹幕的滚动时间 | number |  |  |
+| barrageList | 弹幕列表数据 | array |  | 改为 list |
+| frequency | 可视区域内每个弹幕出现的时间间隔 | number |  | 改为 interval ？ |
+| speeds | 每个弹幕的滚动时间 | number |  | 改为 duration |
 | rows | 弹幕行数，分几行展示 | number |  |  |
-| top | 弹幕垂直距离 | number |  |  |
+| top | 弹幕垂直距离 | number |  | 改成 gapY |
 | loop | 是否循环播放 | boolean |  |  |
-| add | 添加数据 | - |  |  |
-| imgUrl | 左侧图片Url | string | - |  |
+| add | 添加数据 | - |  | 类型需需改 |
 
 
 # 缺点

@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -40,7 +40,7 @@ Cascader:
 | valueKey | 自定义`options`结构中`value`的字段 | string | - | optionKey : {text: xxx, value: xxx, childern: xxx} |
 | textKey | 自定义`options`结构中`text`的字段 | string | - | optionKey : {text: xxx, value: xxx, childern: xxx}  {  text: 'text1',  value: 'value6'  } |
 | childrenKey | 自定义`options`结构中`children`的字段 | string | - | optionKey : {text: xxx, value: xxx, childern: xxx} |
-| convertConfig | 当options为可转换为树形结构的扁平结构时，配置转换规则 | object | - | formatter   需要写明规则的类型 |
+| convertConfig | 当options为可转换为树形结构的扁平结构时，配置转换规则 | object | - | formatter  format  需要写明规则的类型 |
 | title | 标题 | string | - |  |
 | closeIconPosition | 取消按钮位置，继承 Popup 组件 | string | top-right | 以 popup 的名字为准 |
 | close-icon | 自定义关闭按钮，继承 Popup 组件 | string | close | closeIcon |

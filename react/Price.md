@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -29,9 +29,9 @@ Price:
 | 属性 | 描述 | 类型 | 默认值 | 改动点 |
 | --- | --- | --- | --- | --- |
 | price | 价格数量 | number |  |  |
-| needSymbol | 是否需要加上 symbol 符号 | boolean | true |  |
+| needSymbol | 是否需要加上 symbol 符号 | boolean | true | 和 symbol 是否可以合二为一？ |
 | symbol | 符号类型 | string | &yen; |  |
-| decimalDigits | 小数位位数 | number | 2 |  |
+| decimalDigits | 小数位位数 | number | 2 | 改为 digits |
 | thousands | 是否按照千分号形式显示 | boolean |  |  |
 | position | 符号显示在价格前或者后，`before`、`after` | string | before |  |
 | size | 价格尺寸，`large`、`normal`、`small` | string | large |  |

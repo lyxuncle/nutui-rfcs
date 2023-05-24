@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -24,10 +24,7 @@
 # 详细设计
 
 
-OverLay（Mask ）
-
-
-改成 Overlay:
+OverLay:
 
 | 属性 | 描述 | 类型 | 默认值 | 改动点 |
 | --- | --- | --- | --- | --- |
@@ -36,7 +33,7 @@ OverLay（Mask ）
 | duration | 动画时长，单位秒 | number | 0.3 |  |
 | overlayClass | 自定义遮罩类名 | string | - | 改成 className，统一处理 |
 | overlayStyle | 自定义遮罩样式 | cssproperties | - | 改成 style，统一处理 |
-| lockScroll | 背景是否锁定 | boolean |  |  |
+| lockScroll | 背景是否锁定 | boolean |  | 默认值改为 true |
 | closeOnClickOverlay | 是否点击遮罩关闭 | boolean | true | 改成 closeOnOverlayClick |
 | onClick | 点击时触发 | `event: event` |  |  |
 |  |  |  |  | 增加这两个回调处理  afterClose 完全关闭后触发 () => void -  afterShow 完全展示后触发 () => void - |

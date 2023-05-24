@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -24,7 +24,7 @@
 # 详细设计
 
 
-InputNumber(Stepper ):
+InputNumber:
 
 | 属性 | 描述 | 类型 | 默认值 | 改动点 |
 | --- | --- | --- | --- | --- |
@@ -36,7 +36,7 @@ InputNumber(Stepper ):
 | step | 步长 | string | number | 1 |  |
 | decimalPlaces | 设置保留的小数位 | string | number |  | digits |
 | disabled | 禁用所有功能 | boolean |  |  |
-| readonly | 只读状态禁用输入框操作行为 | boolean |  |  |
+| readonly | 只读状态禁用输入框操作行为 | boolean |  | 改为 readOnly |
 | isAsync | 支持异步修改 | boolean |  | async |
 | onAdd | 点击增加按钮时触发 | `event: event` |  | 改一下 onPlus ？onIncrement ? |
 | onReduce | 点击减少按钮时触发 | `event: event` |  | onMinus ？onDecrement ? |

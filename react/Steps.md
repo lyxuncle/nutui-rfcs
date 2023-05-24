@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -28,13 +28,13 @@ Steps:
 
 | 属性 | 描述 | 类型 | 默认值 | 改动点 |
 | --- | --- | --- | --- | --- |
-| title | 流程步骤的标题 | string | - |  |
-| content | 流程步骤的描述性文字 | string | - |  |
-| icon | 图标(来自Icon组件的name属性) | string | - |  |
-| iconColor | 图标颜色 | string | null |  |  |
-| size | 图标尺寸大小(来自Icon组件的size属性) | string | - |  |
-| activeIndex | 流程步骤的索引 | number |  |  |
-| renderContent | 流程步骤的描述性文字的html结构 | reactnode | - |  |
+| title | 流程步骤的标题 | string | - | 类型改为 ReactNode |
+| content | 流程步骤的描述性文字 | string | - | 改成 description，类型改为 ReactNode |
+| icon | 图标(来自Icon组件的name属性) | string | - | 改类型 reactnode |
+| iconColor | 图标颜色 | string | null |  | 删除 |
+| size | 图标尺寸大小(来自Icon组件的size属性) | string | - | 删除 |
+| activeIndex | 流程步骤的索引 | number |  | 改为 value |
+| renderContent | 流程步骤的描述性文字的html结构 | reactnode | - | 删除，和 description 合并 |
 
 
 # 缺点

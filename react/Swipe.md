@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -28,15 +28,15 @@ Swipe:
 
 | 属性 | 描述 | 类型 | 默认值 | 改动点 |
 | --- | --- | --- | --- | --- |
-| name | 标识符，可以在事件参数中获取到 | number | string | - | onOpen和onClose里直接返回，是否需要？ |
-| leftWidth | 指定左侧滑动区域宽度，单位为 `px` | number | string |  |  |
-| rightWidth | 指定右侧滑动区域宽度，单位为 `px` | number | string |  |  |
-| leftAction | 左侧滑动区域的内容 | reactnode | - | 改为left或leftActions |
-| rightAction | 右侧滑动区域的内容 | reactnode | - | 改为right或rightActions |
+| name | 标识符，可以在事件参数中获取到 | number | string | - |  |
+| leftWidth | 指定左侧滑动区域宽度，单位为 `px` | number | string |  | 删掉 |
+| rightWidth | 指定右侧滑动区域宽度，单位为 `px` | number | string |  | 删掉 |
+| leftAction | 左侧滑动区域的内容 | reactnode | - |  |
+| rightAction | 右侧滑动区域的内容 | reactnode | - |  |
 | beforeClose | 关闭前的回调函数，返回 `position` | string | left |  |
 | disabled | 是否禁用滑动 | boolean |  |  |
-| onOpen | 打开单元格侧边栏 | `name: string, position: 'left' | 'right'` |  | afterOpen |
-| onClose | 收起单元格侧边栏 | `name: string, position: 'left' | 'right'` |  | afterClose |
+| onOpen | 打开单元格侧边栏 | `name: string, position: 'left' | 'right'` |  | 滑动方向给用户的有问题，看看 |
+| onClose | 收起单元格侧边栏 | `name: string, position: 'left' | 'right'` |  |  |
 | onActionClick | 点击左侧或者右侧时触发 | `event: event, position: 'left' | 'right'` |  |  |
 | onTouchStart | onTouchStart | `event: event` |  |  |
 | onTouchMove | onTouchMove | `event: event` |  |  |

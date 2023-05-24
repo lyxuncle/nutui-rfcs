@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -28,18 +28,18 @@ TrendArrow:
 
 | 属性 | 描述 | 类型 | 默认值 | 改动点 |
 | --- | --- | --- | --- | --- |
+| rate | 数值，大于0时箭头向上，小于0时箭头向下 | number | - | 改成 value |
 | digits | 小数位精度 | number | 2 |  |
-| showSign | 是否显示加减号 | boolean |  |  |
-| showZero | 是否显示 0 | boolean |  |  |
+| showSign | 是否显示加减号 | boolean |  | symbol |
+| showZero | 是否显示 0 | boolean |  | zero |
 | arrowLeft | 是否在数字左侧显示箭头 | boolean |  |  |
-| syncTextColor | 文字颜色是否与箭头同步 | boolean | true |  |
-| textColor | 文字颜色 | string | #333333 |  |
+| syncTextColor | 文字颜色是否与箭头同步 | boolean | true | syncColor |
+| textColor | 文字颜色 | string | #333333 | color |
 | riseColor | 向上箭头颜色 | string | #fa2c19 |  |
 | dropColor | 向下箭头颜色 | string | #64b578 |  |
-| iconSize | 箭头大小 | string | 12px |  |
-| upIconName | 自定义向上箭头icon | string | triangle-up |  |
+| iconSize | 箭头大小 | string | 12px | 删除 |
+| upIconName | 自定义向上箭头icon | string | triangle-up | 检查 是不是 Icon |
 | downIconName | 自定义向下箭头icon | string | triangle-down |  |
-| source | 视频地址和类型设置 | object | - |  |
 
 
 # 缺点

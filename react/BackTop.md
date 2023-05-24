@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -34,7 +34,7 @@ BackTop:
 | distance | 页面垂直滚动多高后出现 | number | 200 | threshold |
 | zIndex | 设置组件页面层级 | number | 10 |  |
 | isAnimation | 是否有动画,和 duration 参数互斥 | boolean | true | 删 duration={0} |
-| duration | 设置动画持续时间 | number | 1000 | 改描述，默认值改为0，看一下效果？ |
+| duration | 设置动画持续时间 | number | 1000 |  |
 | onClick | 按钮点击时触发事件 | `event: mouseevent` |  |  |
 
 

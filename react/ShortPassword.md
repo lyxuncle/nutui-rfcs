@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -24,11 +24,11 @@
 # 详细设计
 
 
-ShortPassword（PasscodeInput）:
+ShortPassword:
 
 | 属性 | 描述 | 类型 | 默认值 | 改动点 |
 | --- | --- | --- | --- | --- |
-| modelValue | 内容 | string | number | - | value受控值，defaultValue默认值 |
+| modelValue | 内容 | string | number | - | value受控值，defaultValue默认值  需要搭配 NumberKeyboard 使用，只增加 value，不增加 defaultValue @裴新宇  |
 | visible | 是否展示短密码框 | boolean |  |  |
 | title | 标题 | string | 请输入密码 |  |
 | desc | 密码框描述 | string | 您使用了虚拟资产，请进行验证 | description |

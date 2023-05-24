@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -28,8 +28,8 @@ Pagination:
 
 | 属性 | 描述 | 类型 | 默认值 | 改动点 |
 | --- | --- | --- | --- | --- |
-| modelValue | 当前页码 | number | - | 改成 current；受控 |
-| defaultValue | 当前页码 | number | 1 | 待思考 |
+| modelValue | 当前页码 | number | - | 改成 value；受控 |
+| defaultValue | 当前页码 | number | 1 | 改为 defaultValue |
 | mode | 显示模式,可选值为：multi，simple | string | multi |  |
 | prevText | 自定义上一页按钮内容 | string | reactnode | 上一页 | 改为 prev |
 | nextText | 自定义下一页按钮内容 | string | reactnode | 下一页 | 改为 next |

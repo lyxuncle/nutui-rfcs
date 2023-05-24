@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -35,7 +35,7 @@ PullToRefresh:
 | headHeight | 头部提示内容区的高度，单位为 px | number | 40 |  |
 | pullingText | 下拉的提示文案 | reactnode | 下拉刷新 |  |
 | refreshingText | 刷新时的提示文案 | reactnode | 加载中⋯⋯ |  |
-| renderText | 根据下拉状态，自定义下拉提示文案 | reactnode | - | customText？四种状态都有，还需要这个吗 |
+| renderText | 根据下拉状态，自定义下拉提示文案 | reactnode | - |  |
 | threshold | 触发刷新需要下拉多少距离，单位为 px | number | 60 |  |
 | onRefresh | 触发刷新时的处理函数 | `() => promise<any>` |  |  |
 

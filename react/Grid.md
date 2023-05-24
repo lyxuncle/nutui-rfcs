@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -32,7 +32,7 @@ Grid:
 | iconSize | 图标大小，如 `20px` `2em` `2rem` | number | string | 28px | 删 |
 | iconColor | 图标颜色 | string | - | 删 |
 | border | 是否显示边框 | boolean | true | 删, item classname 设置 |
-| gutter | 格子之间的间距，默认单位为`px` | number | string |  |  |
+| gutter | 格子之间的间距，默认单位为`px` | number | string |  | 改为 gap |
 | center | 是否将格子内容居中显示 | boolean | true |  |
 | square | 是否将格子固定为正方形 | boolean |  |  |
 | reverse | 内容翻转 | boolean |  |  |

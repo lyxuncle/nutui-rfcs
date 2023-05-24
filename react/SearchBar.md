@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -30,7 +30,7 @@ SearchBar:
 | --- | --- | --- | --- | --- |
 | value | 当前输入的值 | string | - |  |
 | placeholder | 输入框默认暗纹 | string | 请输入 |  |
-| className | 自定义class类名 | string | - |  |
+| className | 自定义class类名 | string | - | 删 |
 | shape | 搜索框形状，可选值为 `round` | string | square | 1.现在并不生效，如果要加的话，需要加到nut-searchbar__content属性上  2.border-radius的值可以用css变量来控制，不需要传shape属性 |
 | disabled | 是否禁用输入框 | boolean |  | 透传到input上，和input同理 |
 | readonly | 输入框只读 | boolean |  | 透传到input上，和input同理 |
@@ -38,8 +38,8 @@ SearchBar:
 | clearable | 是否展示清除按钮 | boolean | true |  |
 | clearIcon |  |  |  |  |
 | clearIconSize | 清除按钮尺寸大小，同Icon的size | string | number | 12px | 删除，icon上的属性 |
-| background | 搜索框外部背景色 | string | - | css变量控制 |
-| inputBackground | 搜索框背景色 | string | - | css变量控制 |
+| background | 搜索框外部背景色 | string | - | 删，css变量控制 |
+| inputBackground | 搜索框背景色 | string | - | 删，css变量控制 |
 | inputAlign | 对齐方式，可选 `center` `right` | string | left | css变量控制文本的对其方向 |
 | autofocus | 是否自动聚焦 | boolean |  | 1.文档书写错误，应该写成autoFocus，代码里是正确的 |
 | label | 搜索框左侧文本 | string | - | left |

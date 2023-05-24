@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -31,6 +31,9 @@ Popover:
 | name | 选项文字 | string | - |  |
 | icon | nut-icon 图标名称 | string | - |  |
 | disabled | 是否为禁用状态 | boolean |  |  |
+|  |  |  |  | 建议增加 content，为ReactNode |
+|  |  |  |  | 建议增加 api：show、hide等 |
+|  |  |  |  | 对齐vue版本的demo |
 
 
 # 缺点

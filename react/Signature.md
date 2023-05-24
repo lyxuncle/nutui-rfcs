@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -28,13 +28,13 @@ Signature:
 
 | 属性 | 描述 | 类型 | 默认值 | 改动点 |
 | --- | --- | --- | --- | --- |
+| customClass | 自定义 class | string | - |  |
 | lineWidth | 线条的宽度 | number | 3 |  |
 | strokeStyle | 绘图笔触颜色 | string | #000 |  |
-| type | 图片格式 | string | png |  |
-| unSupportTpl | 不支持 Canvas 情况下的展示文案 | string | 对不起，当前浏览器不支持 Canvas，无法使用本控件！ |  |
-| onConfirm | 点击确认按钮触发事件回调函数 | canvas 和签名图片展示的 data uri |  |  |
-| onClear | 点击重签按钮触发事件回调函数 | - |  |  |
-| visible | 是否显示弹层 | 是 | boolean | 建议重新review |
+| type | 图片格式 | string | png | 类型改为 png｜jpg，备注 是否扩展别的图片类型 |
+| unSupportTpl | 不支持 Canvas 情况下的展示文案 | string | 对不起，当前浏览器不支持 Canvas，无法使用本控件！ | 改为 unsupported，类型改为 RreactNode  ？？ |
+| onConfirm | 点击确认按钮触发事件回调函数 | canvas 和签名图片展示的 data uri |  | 改成 ref 的方法，去掉 button |
+| onClear | 点击重签按钮触发事件回调函数 | - |  | 改成 ref 的方法，去掉 button |
 
 
 # 缺点

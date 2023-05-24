@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -30,9 +30,9 @@ Toast:
 | --- | --- | --- | --- | --- |
 | id | 标识符，相同者共用一个实例<br>loading类型默认使用一个实例，其他类型默认不共用 | string | number | - |  |
 | duration | 展示时长（秒）<br>值为 0 时，toast 不会自动消失 | number | 2 |  |
-| title | 标题 | string | - | title msg icon 要不要合并 |
-| center | 是否展示在页面中部（为false时展示在底部） | boolean | true | 是否改为垂直方向显示位置position：  'top' | 'bottom' | 'center' |
-| bottom | 距页面底部的距离（像素），option.center为false时生效 | number | 30 |  |
+| title | 标题 | string | - |  |
+| center | 是否展示在页面中部（为false时展示在底部） | boolean | true | 改为垂直方向显示位置position：  'top' | 'bottom' | 'center'    距页面底部30？ |
+| bottom | 距页面底部的距离（像素），option.center为false时生效 | number | 30 | 改为垂直方向显示位置position：  'top' | 'bottom' | 'center'  距页面底部30？ |
 | textAlignCenter | 多行文案是否居中 | boolean | true | css变量实现? |
 | bgColor | 背景颜色（透明度） | string | rgba(0, 0, 0, 0.8) | css变量实现? |
 | customClass | 自定义类名 | string | - | 改为className |
@@ -42,9 +42,9 @@ Toast:
 | cover | 是否显示遮罩层 | boolean |  | 改成 overlay |
 | coverColor | 遮罩层颜色，默认透明 | string | rgba(0,0,0,0) | 改成 overlay |
 | loadingRotate | loading图标是否旋转，仅对loading类型生效 | boolean | true | 删，代码中未实现，现在改为icon传入，是否还要保留 |
-| onClose | 关闭时触发的事件 | function | null | afterClose |
+| onClose | 关闭时触发的事件 | function | null |  |
 | closeOnClickOverlay | 是否在点击遮罩层后关闭提示 | boolean |  | 改为：closeOnOverlayClick |
-| Toast.text | 展示文字提示 | message｜ options | toast 实例(message支持传入HTML) |  |
+| Toast.text | 展示文字提示 | message｜ options | toast 实例(message支持传入HTML) | 函数式调用归类。 |
 | Toast.success | 展示成功提示 | message｜ options | toast 实例 |  |
 | Toast.fail | 展示失败提示 | message｜ options | toast 实例 |  |
 | Toast.warn | 展示警告提示 | message｜ options | toast 实例 |  |

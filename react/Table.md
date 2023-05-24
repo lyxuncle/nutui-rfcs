@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -32,7 +32,6 @@ Table:
 | align | 列的对齐方式，可选值left,center,right | string | left |  |
 | sorter | 排序，可选值有 true,function, default, 其中 default表示点击之后可能会依赖接口, function可以返回具体的排序函数, default表示采用默认的排序算法 | boolean | function | string | - |  |
 | render | 自定义渲染列数据，优先级高 | function(record) | - |  |
-| type | 标签类型，可选值为primary success danger warning | string | default |  |
 
 
 # 缺点

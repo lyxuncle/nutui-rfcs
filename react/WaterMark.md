@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -28,20 +28,20 @@ WaterMark:
 
 | 属性 | 描述 | 类型 | 默认值 | 改动点 |
 | --- | --- | --- | --- | --- |
+| width | 水印的宽度 | number | 120 |  |
 | height | 水印的高度 | number | 64 |  |
 | rotate | 水印绘制时，旋转的角度 | number | -22 |  |
-| image | 图片源，建议导出 2 倍或 3 倍图，优先使用图片渲染水印 | string | - |  |
+| image | 图片源，建议导出 2 倍或 3 倍图，优先使用图片渲染水印 | string | - | ？？？ |
 | imageWidth | 图片宽度 | number | 120 |  |
 | imageHeight | 图片高度 | number | 64 |  |
 | zIndex | 追加的水印元素的 z-index | number | 2000 |  |
 | content | 水印文字内容 | string | - |  |
-| fontColor | 水印文字颜色 | string | rgba(0, 0, 0, .15) |  |
+| fontColor | 水印文字颜色 | string | rgba(0, 0, 0, .15) | color，检查全局修改点 |
 | fontSize | 文字大小 | string | number | 16 |  |
 | gapX | 水印之间的水平间距 | number | 24 |  |
 | gapY | 水印之间的垂直间距 | number | 48 |  |
 | fullPage | 是否覆盖整个页面 | boolean | true |  |
 | fontFamily | 水印文字字体 | boolean | true |  |
-| modelValue | 是否打开地址选择 | string | - |  |
 
 
 # 缺点

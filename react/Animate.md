@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -28,12 +28,12 @@ Animate:
 
 | 属性 | 描述 | 类型 | 默认值 | 改动点 |
 | --- | --- | --- | --- | --- |
-| type | 动画类型，见下方type值说明 | string | shake |  |
-| action | 触发方式，'initial'--初始化执行; 'click'--点击执行 | string | initial | 改为triggerMode？ |
+| type | 动画类型，见下方type值说明 | string | shake | props和type规范 |
+| action | 触发方式，'initial'--初始化执行; 'click'--点击执行 | string | initial |  |
 | loop | 是否循环执行。true-循环执行;false-执行一次 | boolean |  |  |
 | onClick | 点击元素时触发 | `event: event` |  |  |
-| className |  |  |  |  |
-| style |  |  |  | 代码补一下 |
+| className |  |  |  | 继承实现 |
+| style |  |  |  | 继承实现 |
 
 
 # 缺点

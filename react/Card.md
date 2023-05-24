@@ -1,4 +1,4 @@
-- 开始日期：2023-04-11
+- 开始日期：2023-05-24
 - 目标主要版本：NutUI-React 2.0 / NutUI-React-Taro 2.0
 - 参考问题Issues：
 
@@ -28,6 +28,7 @@ Card:
 
 | 属性 | 描述 | 类型 | 默认值 | 改动点 |
 | --- | --- | --- | --- | --- |
+| imgUrl | 左侧图片Url | string | - |  |
 | title | 标题 | string | - |  |
 | price | 商品价格 | string | - |  |
 | vipPrice | 会员价格 | string | - |  |
@@ -38,7 +39,6 @@ Card:
 | originTpl | 价格后方自定义内容 | reactnode | - |  |
 | shopTagTpl | 店铺介绍自定义 | reactnode | - |  |
 | footerTpl | 右下角内容自定义 | reactnode | - |  |
-| customClass | 自定义 class | string | - |  |
 
 
 # 缺点
