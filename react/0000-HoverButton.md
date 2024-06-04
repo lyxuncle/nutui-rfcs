@@ -30,6 +30,14 @@ HoverButton.Item:
 | icon    | 设置按钮图标       | ReactNode | -      |
 | onClick | 按钮点击时触发事件 | Function  |        |
 
+样式变量：
+
+| 名称                                | 说明                     | 默认值 |
+| ----------------------------------- | ------------------------ | ------ |
+| --nutui-hoverbutton-spacing         | 按钮垂直间距             | `16px` |
+| --nutui-hoverbutton-position-bottom | 按钮区域距离屏幕底部距离 | `48px` |
+| --nutui-hoverbutton-position-right  | 按钮区域距离屏幕右侧距离 | `16px` |
+
 # 缺点
 
 开放的配置项较少，灵活度较低。
